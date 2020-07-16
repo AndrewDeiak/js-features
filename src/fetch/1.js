@@ -15,4 +15,4 @@ async function getUsers(names) {
     return await Promise.all(users)
 }
 
-getUsers([120, 1, 2, 3, 4, 5, 6, 7, 8, 9]).then(response => console.log(response));
+getUsers([1, 2, 3, 4, 5, 6, 7, 8, 9, 133331]).then(response => console.log(response));
