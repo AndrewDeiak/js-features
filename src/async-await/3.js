@@ -7,7 +7,7 @@ const getUsers = async () => {
 
     const delay = await new Promise((resolve, reject) => setTimeout(resolve, 3000));
 
-    return {users, todos};
+    return {user, todos};
 };
 
 getUsers().then(console.log);
