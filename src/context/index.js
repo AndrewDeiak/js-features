@@ -25,6 +25,11 @@ const peter = {
     age: 22
 };
 
-person.logInfo.bind(peter, "Front end dev", 111111)();
+const fnLogInfo = person.logInfo.bind(peter, "Front end dev");
+fnLogInfo(111111);
+console.dir(fnLogInfo);
+
 person.logInfo.call(peter, "Teacher", 2222222);
-person.logInfo.apply(peter, ["Teacher", 33333]);
+
+// Max value in array
+console.log(Math.min.apply(null, [10, 20, 1]));
